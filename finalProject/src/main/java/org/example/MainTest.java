@@ -30,4 +30,22 @@ public class MainTest {
         int result = Assignment.calcAssignment(numerator, denominator);
         Assertions.assertEquals(expectedResult, result);
     }
+
+    @Test
+    public void testIsAssignmentWeightValid() {
+        double weight = 1;
+        boolean expectedResult = true;
+        boolean result = Course.isAssignmentValid(weight);
+
+        Assertions.assertEquals(expectedResult, result);
+    }
+
+    @Test
+    public void testIsAssignmentWeightValid2() {
+        double weight = 4;
+        boolean expectedResult = false;
+        boolean result = Course.isAssignmentValid(weight);
+
+        Assertions.assertEquals(expectedResult, result);
+    }
 }
