@@ -48,4 +48,12 @@ public class MainTest {
 
         Assertions.assertEquals(expectedResult, result);
     }
+
+    @Test
+    public void testToTitleCase() {
+        String strIn = "daveena patel";
+        String expectedResult = "Daveena Patel";
+        String result = Util.toTitleCase(strIn);
+        Assertions.assertEquals(expectedResult, result);
+    }
 }
